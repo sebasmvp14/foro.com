@@ -1,0 +1,270 @@
+<html><head><base>
+    <meta charset="UTF-8">
+    <title>New FLow Roleplay - Tu vida Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="social.css">
+
+    <style>
+    :root {
+      --neon-blue: #0077ff;
+      --dark-bg: #0a0a0a;
+      --main-blue: #0057b3;
+    }
+    
+    * {
+      margin: 3;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Play', sans-serif;
+    }
+    
+    body {
+      background-color: var(--dark-bg);
+      color: white;
+    }
+    
+    header {
+      background: linear-gradient(45deg, var(--main-blue), var(--neon-blue));
+      padding: 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); text-shadow: 0 0 10px var(--neon-blue); }
+      50% { transform: translateY(-15px); text-shadow: 0 0 20px var(--neon-blue), 0 0 30px gray; }
+      100% { transform: translateY(0px); text-shadow: 0 0 10px var(--neon-blue); }
+    }
+
+    nav {
+      padding: 5rem;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+    }
+    
+    nav ul {
+    font-size: 1.5rem; /* Aumenta el tamaño de los enlaces del menú */
+}
+
+    nav ul li {
+    margin: 0 15px; /* Aumenta el espacio entre los elementos del menú */
+}
+    
+    nav a {
+      color: var(--neon-blue);
+      text-decoration: none;
+      font-size: 3rem;
+      transition: all 0.3s;
+    }
+
+    .hero {
+            height: 150vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url('https://cdn.tebex.io/webstore/1115775/images/1115775-943c3814326427dabb44c9c263ac2d93eb42edc3.jpg') no-repeat center center/cover;
+            padding: 50px;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+      
+    nav h2 {
+        font-size: 100rem; /* Hacer el título más grande en móviles */
+    }
+
+      
+    nav h2 {
+        font-size: 100rem; /* Aumentar el tamaño del texto */
+    }
+}
+
+    .features {
+      padding: 2rem;
+      background: rgba(0, 87, 179, 0.1);
+    }
+
+    .feature-card {
+      background: rgba(0, 119, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid var(--neon-blue);
+      transition: all 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px var(--neon-blue);
+    }
+
+    .staff {
+      padding: 2rem;
+      background: rgba(0, 87, 179, 0.1);
+    }
+
+    .staff-member {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 119, 255, 0.1);
+      border-radius: 10px;
+      border: 1px solid var(--neon-blue);
+    }
+
+    .staff-avatar {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: linear-gradient(45deg, var(--main-blue), var(--neon-blue));
+      padding: 0px;
+    }
+
+    .rules-list {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: rgba(0, 119, 255, 0.1);
+      padding: 2rem;
+      border-radius: 10px;
+      border: 1px solid var(--neon-blue);
+    }
+
+    .rules-list li {
+      margin: 1rem 0;
+      padding-left: 1rem;
+      border-left: 3px solid var(--neon-blue);
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--neon-blue);
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px var(--neon-blue);
+    }
+
+    .texto-flotantexd {
+      animation: float 2s ease-in-out infinite;
+      display: flex;
+      height: 1px;
+      flex-direction: row;
+    }
+
+.colorprogramadores{
+
+  background: linear-gradient(45deg, #08ff18, #250021);
+  margin-left: 15px;
+  color: white;
+  padding: 5px;
+  border-radius: 50px;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: 2000;
+
+  box-shadow: 0 0 40px rgba(81, 255, 0, 0.588);
+}
+
+
+.colorfunda{
+
+background: linear-gradient(45deg, #ff00b3, hsl(297, 100%, 50%));
+margin-left: 15px;
+color: white;
+padding: 1px;
+border-radius: 50px;
+font-weight: bold;
+white-space: nowrap;
+z-index: 2000;
+
+box-shadow: 0 0 40px rgba(255, 0, 225, 0.588);
+}
+
+.colorfunda2{
+
+background: linear-gradient(45deg, #5a08ff, hsl(249, 100%, 50%));
+margin-left: 15px;
+color: white;
+padding: 1px;
+border-radius: 50px;
+font-weight: bold;
+white-space: nowrap;
+z-index: 2000;
+
+box-shadow: 0 0 40px rgba(8, 0, 255, 0.588);
+}
+
+
+
+.imgstaffs{
+
+    border-radius: 50px;
+
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+
+  
+    
+  
+    
+      </nav>
+      <footer class="footer-social">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <div class="social-icons">
+          <div class="social-footer">
+            <a href="index.html" style="color: white; font-weight: bold; text-decoration: none;">Inicio</a>
+    <a href="informacion.html" style="color: white; font-weight: bold; text-decoration: none;">Información</a>
+    <a href="galeria.html" style="color: white; font-weight: bold; text-decoration: none;">Galería</a>
+    <a href="tienda.html" style="color: white; font-weight: bold; text-decoration: none;">Tienda</a>
+    <a href="staff.html" style="color: white; font-weight: bold; text-decoration: none;">Staff</a>
+    <a href="reglas.html" style="color: white; font-weight: bold; text-decoration: none;">Reglas</a>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+            <p>Nuestras Redes Sociales</p>
+            <a href="https://facebook.com" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP19NBDC4NLvAtI-53SbngDdozUk4UnkbgnA&s" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="https://i.pinimg.com/564x/c6/4c/ab/c64cabf9dc0a909e168634d4a01aa40b.jpg" alt="YouTube"></a>
+            <a href="https://instagram.com" target="_blank"><img src="data:image/png;base64,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" alt="TikTok"></a>
+            <a href="https://discord.com" target="_blank"><img src="data:image/png;base64,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" alt="Discord"></a>
+            <p></p>
+            <p></p>  
+            <h2>New FLow Norte</h2>
+            <footer class="footer-social.">
+              <div class="social-icons">
+                <a href="https://facebook.com/tu-pagina" target="_blank" class="social-link facebook">
+                  <img src="img/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/tu-cuenta" target="_blank" class="social-link twitter">
+                  <img src="img/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com/tu-perfil" target="_blank" class="social-link instagram">
+                  <img src="img/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://youtube.com/tu-canal" target="_blank" class="social-link youtube">
+                  <img src="img/youtube.png" alt="YouTube">
+                </a>
+              </div>
+            </footer>
+          </div>
+      </footer>  
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <h3>Bienvenido a New FLow Roleplay</h3>
+          <h3>El mejor servidor Roleplay de San Andreas Multiplayer<h3>
+          </div>
+          <footer class="footer">
+            © 2024 New Flow Roleplay - Todos los derechos reservados.
+        </footer>
+      </section>
+    </body>
+    </html>
+    </body></html>
