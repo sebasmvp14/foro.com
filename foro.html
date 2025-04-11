@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidad</title>
+</head>
+<style>
+
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://wallpapers-clan.com/wp-content/uploads/2024/05/aesthetic-gta-cityscape-desktop-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.comunidad-item {
+  background-color: rgba(255, 255, 255, 0.9); /* Transparente para dejar ver el fondo */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 45%;
+  text-align: left;
+}
+
+/* Encabezado */
+header {
+  background-color: #2e2b2b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: rgb(39, 36, 36);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Contenido de la Comunidad */
+.comunidad {
+  padding: 40px;
+  text-align: center;
+}
+
+.comunidad h2 {
+  font-size: 32px;
+  color: #1b1919;
+}
+
+.comunidad p {
+  font-size: 18px;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+/* Estilo de los elementos dentro de la Comunidad */
+.comunidad-contenido {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.comunidad-item {
+  background-color: #222121;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgb(141, 139, 139);
+  width: 45%;
+  text-align: left;
+}
+
+.comunidad-item h3 {
+  font-size: 24px;
+  color: #706969;
+}
+
+/* Estilo para la lista de eventos */
+.eventos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.eventos li {
+  background-color: #999595;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(51, 50, 50, 0.507);
+  margin: 10px 0;
+}
+
+.evento-fecha {
+  font-size: 14px;
+  color: #fceded;
+}
+
+/* Estilo del Chat */
+.chat-contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-mensajes {
+  max-height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+.mensaje {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.chat-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .comunidad-contenido {
+    flex-direction: column;
+  }
+
+  .comunidad-item {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Comunidad de Flow Roleplay</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="comunidad">
+      <h2>Bienvenido a la Comunidad</h2>
+      <p>Conéctate con otros miembros participando en eventos y charlando en el chat en tiempo real.</p>
+
+      <!-- Sección de Eventos -->
+      <div class="comunidad-contenido">
+        <div class="comunidad-item eventos">
+          <h3>Próximos Eventos</h3>
+          <ul>
+            <li>
+              <strong>Evento 1: Torneo de Videojuegos</strong><br>
+              <span class="evento-fecha">Fecha: 15 de Abril, 2025 - 18:00</span><br>
+              <p>¡Participa en el torneo para ganar premios increíbles!</p>
+              <a href="evento1.html" class="comunidad-btn">Ver Detalles</a>
+            </li>
+            <li>
+              <strong>Evento 2: Reunión de la Comunidad</strong><br>
+              <span class="evento-fecha">Fecha: 18 de Abril, 2025 - 20:00</span><br>
+              <p>Únete a nosotros para una charla informal sobre futuros proyectos.</p>
+              <a href="evento2.html" class="comunidad-btn">Ver Detalles</a>
+            </li>
+            <!-- Puedes agregar más eventos aquí -->
+          </ul>
+        </div>
+
+        <!-- Sección de Chat -->
+        <div class="comunidad-item chat">
+          <h3>Chat en Tiempo Real</h3>
+          <div class="chat-contenedor">
+            <div class="chat-mensajes">
+              <!-- Aquí los mensajes se agregarían dinámicamente con JavaScript o backend -->
+              <div class="mensaje">Usuario 1: ¡Hola! ¿Cómo están?</div>
+              <div class="mensaje">Usuario 2: ¡Muy bien, gracias!</div>
+            </div>
+            <textarea class="chat-input" placeholder="Escribe tu mensaje..."></textarea>
+            <button class="chat-btn">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Flow Roleplay. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script> <!-- Si tienes un archivo JS -->
+  <script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','https://www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '093Sd'});</script>
+</script>
+</body>
+</html>
