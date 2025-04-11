@@ -76,7 +76,7 @@ header nav ul li a {
   flex-wrap: wrap;
 }
 
-.comunidad-item {
+.chatbro {
   background-color: #222121;
   border-radius: 8px;
   padding: 20px;
@@ -211,28 +211,52 @@ header nav ul li a {
         </div>
 
         <!-- Sección de Chat -->
-        <div class="comunidad-item chat">
-          <h3>Chat en Tiempo Real</h3>
-          <div class="chat-contenedor">
-            <div class="chat-mensajes">
-              <!-- Aquí los mensajes se agregarían dinámicamente con JavaScript o backend -->
-              <div class="mensaje">Usuario 1: ¡Hola! ¿Cómo están?</div>
-              <div class="mensaje">Usuario 2: ¡Muy bien, gracias!</div>
-            </div>
-            <textarea class="chat-input" placeholder="Escribe tu mensaje..."></textarea>
-            <button class="chat-btn">Enviar</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="comunidad-item chat">
+  <h3>Chat en Tiempo Real</h3>
+  <div class="chat-contenedor">
+    <!-- Contenedor real del widget Chatbro -->
+    <div id="chatbro-chat" style="width: 100%; min-height: 400px;"></div>
+  </div>
+</div>
+</div>
+</section>
+</main>
 
-  <footer>
-    <p>&copy; 2025 Flow Roleplay. Todos los derechos reservados.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Flow Roleplay. Todos los derechos reservados.</p>
+</footer>
 
-  <script src="script.js"></script> <!-- Si tienes un archivo JS -->
-  <script id="chatBroEmbedCode">/* Chatbro Widget Embed Code Start */function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','https://www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}/* Chatbro Widget Embed Code End */ChatbroLoader({encodedChatId: '093Sd'});</script>
+<script src="script.js"></script> <!-- Si tienes un archivo JS -->
+
+<!-- Chatbro Embed Code -->
+<script>
+  function ChatbroLoader(chats, async) {
+    async = !1 !== async;
+    var params = {
+      embedChatsParameters: chats instanceof Array ? chats : [chats],
+      lang: navigator.language || navigator.userLanguage,
+      needLoadCode: typeof Chatbro === 'undefined',
+      embedParamsVersion: localStorage.embedParamsVersion,
+      chatbroScriptVersion: localStorage.chatbroScriptVersion
+    };
+
+    var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
+    xhr.onload = function () {
+      eval(xhr.responseText);
+      Chatbro.mount({
+        encodedChatId: '093Sd',
+        containerElement: document.getElementById('chatbro-chat')
+      });
+    };
+    xhr.onerror = function () {
+      console.error('Chatbro loading error');
+    };
+    xhr.open('GET', 'https://www.chatbro.com/embed.js?' + btoa(unescape(encodeURIComponent(JSON.stringify(params)))), async);
+    xhr.send();
+  }
+
+  ChatbroLoader({ encodedChatId: '093Sd' });
 </script>
 </body>
 </html>
