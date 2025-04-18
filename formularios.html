@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postulaciones - GTA Distrito Roleplay</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    form {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffff55;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #00ffff;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: white;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background: #00ffff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background: #00dddd;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      form {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulario de Postulación</h1>
+    <form action="https://formsubmit.co/danielax143y@gmail.com" method="POST">
+      <!-- Importante: campo para registrar el email del postulante -->
+      <label for="correo">Tu Gmail (de donde enviarás la postulación):</label>
+      <input type="email" name="Correo del Postulante" id="correo" required placeholder="ejemplo@gmail.com">
+
+      <!-- Preguntas de rol -->
+      <label for="nombre">Nombre IC:</label>
+      <input type="text" name="Nombre IC" id="nombre" required>
+
+      <label for="edad">Edad IC:</label>
+      <input type="number" name="Edad IC" id="edad" required>
+
+      <label for="experiencia">¿Tienes experiencia en servidores Roleplay? Cuéntanos:</label>
+      <textarea name="Experiencia en RP" rows="3" required></textarea>
+
+      <label for="pg">¿Qué es el PG y da un ejemplo?</label>
+      <textarea name="Pregunta PG" rows="3" required></textarea>
+
+      <label for="mg">¿Qué es el MG y da un ejemplo?</label>
+      <textarea name="Pregunta MG" rows="3" required></textarea>
+
+      <label for="dm">¿Qué es el DM y da un ejemplo?</label>
+      <textarea name="Pregunta DM" rows="3" required></textarea>
+
+      <label for="objetivo">¿Cuál sería tu objetivo en el servidor?</label>
+      <textarea name="Objetivo en el servidor" rows="3" required></textarea>
+
+      <!-- Opcional: redireccionar a página de gracias -->
+      <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="submit" value="Enviar Postulación">
+    </form>
+  </div>
+</body>
+</html>
